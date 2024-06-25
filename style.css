@@ -1,0 +1,190 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url('https://i.postimg.cc/HsXTVTQb/Logan-Macrae-1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Gradient overlay */
+        z-index: 1;
+    }
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+    .nav-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        padding: 5px 10px;
+        transition: background 0.3s, color 0.3s;
+    }
+
+        .nav-item a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #ffeb3b; /* Highlight color */
+        }
+
+@media (max-width: 768px) {
+    .header {
+        height: 250px;
+    }
+
+        .header h1 {
+            font-size: 2.5em;
+        }
+
+        .header p {
+            font-size: 1em;
+        }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column width and number */
+    gap: 10px; /* Space between images */
+}
+
+    .grid-container img {
+        width: 100%;
+        height: auto;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+}
+
+.about {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.projects-container {
+    text-align: center; /* Center align projects */
+}
+
+.project {
+    display: inline-block; /* Display projects side by side */
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    margin: 10px; /* Adjust margin between projects */
+    vertical-align: top; /* Align to the top */
+}
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Ensure images behave correctly */
+        margin: 0 auto; /* Center images horizontally */
+        margin-bottom: 10px; /* Adjust vertical spacing */
+    }
+#contact {
+    text-align: center;
+    border: solid;
+    border-color: black;
+    margin: 75px;
+    background-color: bisque;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
